@@ -12,6 +12,7 @@ public class SoftwareInfoServiceImpl implements SoftwareInfoService {
     private SoftwareInfoMapper software_infoMapper;
     @Override
     public List<SoftwareInfo> findAll() throws Exception {
+        System.out.println("before software_infoMapper.findAll");
         return software_infoMapper.findAll();
     }
 

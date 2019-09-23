@@ -9,6 +9,7 @@ import com.wolf.material.pojo.SoftwareInfo;
 import com.wolf.material.service.SoftwareInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
 @RestController//返回数据直接显示，而不是跳转
 @CrossOrigin(origins = "*",maxAge = 3600)//实现跨域注解

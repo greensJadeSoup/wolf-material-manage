@@ -38,8 +38,12 @@ spring:
         principal-cookie-name: admin
         principal-session-name: admin
         profile-enable: true
+        # 添加IP白名单
+        #allow: 192.168.1.123
+        # 添加IP黑名单，当白名单和黑名单重复时，黑名单优先级更高
+        #deny: 192.168.1.123
       # 根据配置中的url-pattern来访问内置监控页面，如果是上面的配置，内置监控页面的首页是/druid/index.html
-      # http://loacalhsot:8081/druid
+      # http://loacalhsot:8080/druid
       stat-view-servlet:
         url-pattern: /druid/*  # 监控页面访问路径
         # 允许清空统计数据
