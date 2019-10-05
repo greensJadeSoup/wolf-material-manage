@@ -1,5 +1,5 @@
 /**
- * @Title: JsonController
+ * @Title: SoftwareInfoMapper
  * @Description: 软件组成员sql语句编写
  * @author 黄彦钊
  * @date 2019/9/23

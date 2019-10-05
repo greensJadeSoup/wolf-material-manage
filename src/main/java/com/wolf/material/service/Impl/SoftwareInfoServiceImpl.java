@@ -1,3 +1,9 @@
+/**
+ * @Title: SoftwareInfoServiceImpl
+ * @Description: SoftwareInfoService实现类
+ * @author 黄彦钊
+ * @date 2019/9/23
+ **/
 package com.wolf.material.service.Impl;
 import com.wolf.material.mapper.SoftwareInfoMapper;
 import com.wolf.material.pojo.SoftwareInfo;
@@ -12,12 +18,10 @@ public class SoftwareInfoServiceImpl implements SoftwareInfoService {
     private SoftwareInfoMapper software_infoMapper;
     @Override
     public List<SoftwareInfo> findAll() throws Exception {
-        System.out.println("before software_infoMapper.findAll");
         return software_infoMapper.findAll();
     }
-
-    @Override
-    public List<SoftwareInfo> findOne(Integer id) throws Exception {
+@Override
+public List<SoftwareInfo> findOne(Integer id) throws Exception {
         return software_infoMapper.findOne(id);
-    }
-}
+        }
+        }

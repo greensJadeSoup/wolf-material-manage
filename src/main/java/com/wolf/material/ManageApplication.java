@@ -9,7 +9,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
-@SpringBootApplication
+@SpringBootApplication//@SpringBootConfiguration,@EnableAutoConfiguration,@ComponentScan三合一
 public class ManageApplication {
 
     public static void main(String[] args) {
