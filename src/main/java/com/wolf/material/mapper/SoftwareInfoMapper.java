@@ -16,5 +16,5 @@ public interface SoftwareInfoMapper {
     @Select("select * from SoftwareInfo") //将sql语句绑定该接口，调用时自动向数据库发送语句
     List<SoftwareInfo> findAll() throws Exception;
     @Select("select * from SoftwareInfo where sw_id = #{id}")//#{id}为动态
-    List<SoftwareInfo> findOne(Integer id) throws Exception;
+    SoftwareInfo findOne(Integer id) throws Exception;
 }

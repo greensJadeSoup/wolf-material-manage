@@ -20,8 +20,8 @@ public class SoftwareInfoServiceImpl implements SoftwareInfoService {
     public List<SoftwareInfo> findAll() throws Exception {
         return software_infoMapper.findAll();
     }
-@Override
-public List<SoftwareInfo> findOne(Integer id) throws Exception {
-        return software_infoMapper.findOne(id);
-        }
-        }
+    @Override
+    public SoftwareInfo findOne(Integer id) throws Exception {
+            return software_infoMapper.findOne(id);
+    }
+}
